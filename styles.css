@@ -1,0 +1,95 @@
+/*
+Challenge:10th
+Wrap the "hero" section (title, button, logo) in a <div>
+and set its background image to the galaxy image. This will 
+force you to also add some padding on the "hero" <div>.
+
+Add a "Terms and conditions apply" <h3> below the "hero"
+section.
+
+PS: your layout will likely be disturbed by the <body> 
+tag's default margin.
+*/
+/*
+Challenge:
+1. Center the text and button
+2. Style the button according to the design.
+   Use a class to select the button.
+*/
+
+body{
+	margin: 0;
+	color: #AD9A85;
+	/*background-image: url("images/galaxy.gif");*/
+	text-align: center;
+	    /* 
+    Set the font family here. 
+    */
+	font-family: 'Orbitron', sans-serif;
+}
+
+#main_div_class{
+	/*display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;*/
+	
+	padding: 20px 0 40px 0;
+	
+	background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTdkZTRhNGMzODQ2NGI0ZjVjYmFkMTE1OTgxYTg3OTdjNTA5ZmZlNyZjdD1n/I7V6Te1Ka0U00/giphy.gif");
+	height: 500px; /* You must set a specified height */
+	/*background-size: cover;*/
+	background-size: cover;
+	/*overflow:scroll;*/
+	position: relative;
+	
+}
+#logo_id{
+	width:100px;
+	
+}
+.apply_btn{
+	padding:6px 12px;
+	background: white;
+	color: #AD9A85;/*text color of the button */
+	font-weight: bold;/*we can give 800 here, because we imported that font weight in html, 
+	font-weight takes both numerical value and written value */
+	border: none;
+	    /* 
+    You'll need to do something here as well!
+    Can you spot what it is?
+    */
+	/*font-family: 'Orbitron'; sans-serif;*//*one way to change the button font */
+	font-family: inherit; /*inherit means it inharit the body font */
+	/*font-weight: bold;*//* added by me as to make it bold */
+	/*font-size: 16px;*//* changed the font sixe by me */
+}
+
+/* 
+Challenge:
+Add the underline to the title using a <span> and a class.
+*/
+.underline{
+	/* my work:
+	 text-decoration: underline white;  
+	 */
+	 /*from online */
+	 border-bottom: 2px solid white;
+}
+
+/*
+Challenge:
+Add a blurred border around the <h1> using
+the text-shadow technique you just learned. Set
+the blur to 4px and the color to black.
+*/
+#title {
+    /*text-shadow: 5px 5px black;*/
+    /*           ➡️   ⬇️  color */
+	/*text-shadow: -5px 5px black;*/
+	/*    text-shadow: -5px 5px 50px black; */
+    /*           ➡️   ⬇️  blur color */
+	/*text-shadow: 5px -5px 5px black;*/
+	/*in the case of background: whitesmoke;*/
+	 text-shadow: 0px 0px 4px gray;
+}
